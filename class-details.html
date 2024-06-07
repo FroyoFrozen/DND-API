@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Class Details</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-200">
+  <!-- Navbar -->
+  <nav class="bg-blue-500">
+    <div class="flex justify-between">
+      <div class="flex w-full md:w-auto">
+        <a href="index.html" class="text-white flex-1 p-4 text-center border-r border-white">Classes</a>
+        <a href="monsters.html" class="text-white flex-1 p-4 text-center border-r border-white">Monsters</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Class Details Content -->
+  <main class="container mx-auto px-4 py-8">
+    <div class="flex flex-col md:flex-row-reverse md:gap-8 items-center">
+      <aside class="flex flex-col items-center md:w-auto md:ml-8">
+        <img id="class-image" src="assets/images/class-placeholder.png" alt="Class Image" class="w-96 h-96 object-cover mb-2">
+        <h2 id="class-name" class="text-3xl font-bold mt-4 bg-blue-400 px-20 mb-4"></h2>
+      </aside>
+      <section class="w-full">
+        <div id="proficiency-box" class="bg-blue-500 text-white p-4 rounded-lg mb-4"></div>
+        <div id="equipment-box" class="bg-blue-500 text-white p-4 rounded-lg mb-4"></div>
+        <div id="subclass-box" class="bg-blue-500 text-white p-4 rounded-lg mb-4"></div>
+      </section>
+    </div>
+  </main>
+
+  <script src="assets/js/class-details.js"></script>
+  <script src="assets/js/navbar.js"></script>
+</body>
+</html>

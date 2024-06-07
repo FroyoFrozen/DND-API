@@ -1,0 +1,5 @@
+In mijn eerste design had ik zodra je de applicatie bekijkt via een telefoon je op het algemeene scherm 3 vakken naast elkaar zou hebben.
+Ook waren de links op de navbar helemaal naar links geschoven. 
+Dit kreeg ik echter niet echt mooi geimplementeerd in de applicatie.
+Daarom heb ik met goedkeuring ervoor gekozen dat bij gebruik van mobiel de navbar zijn links nu heel het scherm opnemen,
+En dat alle vakken onderelkaar staan.
