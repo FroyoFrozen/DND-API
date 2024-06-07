@@ -1,4 +1,3 @@
-// Function to extract query parameter from URL
 function getQueryParam(parameterName) {
   const queryString = window.location.search;
   const urlParams = new URLSearchParams(queryString);

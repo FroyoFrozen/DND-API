@@ -1,4 +1,3 @@
-// Function to extract query parameter from URL
 function getQueryParam(parameterName) {
   const queryString = window.location.search;
   const urlParams = new URLSearchParams(queryString);
@@ -31,7 +30,6 @@ async function displayMonsterDetails() {
       const monsterAlignmentElement = document.getElementById("monster-alignment");
       const monsterActionsList = document.getElementById("monster-actions");
 
-      // Set monster image source
       monsterImageElement.src = getImageForMonster(monsterData.name);
 
       monsterNameElement.textContent = monsterData.name;
@@ -39,7 +37,6 @@ async function displayMonsterDetails() {
       monsterTypeElement.textContent = `Type: ${monsterData.type}`;
       monsterAlignmentElement.textContent = `Alignment: ${monsterData.alignment}`;
 
-      // Display monster actions
       monsterData.actions.forEach(action => {
         const actionItem = document.createElement("li");
         actionItem.innerHTML = `

@@ -18,22 +18,16 @@ async function init() {
     classButton.textContent = classItem.name;
     classButton.classList.add("bg-blue-900", "text-white", "px-4", "py-2", "block", "text-center", "w-full", "hover:bg-blue-700");
 
-    // Link to class details page on button click
     classButton.addEventListener("click", () => {
       window.location.href = `class-details.html?class=${classItem.name}`;
     });
 
-    // Append all elements to container
     container.appendChild(image);
     container.appendChild(classButton);
     domElement.appendChild(container);
   });
 }
 
-/**
- * Async function to get the data from the D&D 5e API
- * @returns - returns a promise
- */
 async function getDndData(url) {
   try {
     let response = await fetch(url);
@@ -44,7 +38,6 @@ async function getDndData(url) {
   }
 }
 
-// Function to get image path based on class name
 function getImageForClass(className) {
   return `assets/images/${className.toLowerCase()}.png`;
 }

@@ -42,12 +42,10 @@ async function init() {
       monsterButton.textContent = monster.name;
       monsterButton.classList.add("bg-blue-900", "text-white", "px-4", "py-2", "block", "text-center", "w-full", "hover:bg-blue-700");
     
-      // Link to monster details page on button click
       monsterButton.addEventListener("click", () => {
         window.location.href = `monster-details.html?monster=${monster.index}`;
       });
-    
-      // Append all elements to container
+ 
       container.appendChild(image);
       container.appendChild(monsterButton);
       domElement.appendChild(container);
@@ -58,10 +56,6 @@ async function init() {
   }
 }
 
-/**
- * Async function to get the data from the D&D 5e API
- * @returns - returns a promise
- */
 async function getDndData(url) {
   try {
     let response = await fetch(url);
@@ -76,8 +70,6 @@ async function getDndData(url) {
   }
 }
 
-
-// Function to get image path based on monster name
 function getImageForMonster(monsterName) {
   return `assets/images/${monsterName.toLowerCase().replace(/ /g, '-')}.png`;
 }
